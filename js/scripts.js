@@ -1,5 +1,5 @@
 //Business Logic
-//let string = "this this this is a sample string string";
+let string = "this this this is a sample string string";
 function wordCounter(string){
 let stringArray = string.split(" ");
 let wordArray = [];
@@ -17,4 +17,22 @@ stringArray.forEach(function(el) {
   });
 });
 return wordArray;
+}
+
+//new code
+function wordCounter(text){
+  let textArray = text.split(" ");
+  let newArray = [];
+  let p = 0;
+  textArray.foreach(function(el) {
+    if(newArray.find(el) = false){
+      newArray.push(el);
+      newArray.push(1);
+    } 
+    else {
+      p = newArray.findIndex(el);
+      newArray[p + 1] = + 1;
+    }
+    console.log(newArray);
+  });
 }
